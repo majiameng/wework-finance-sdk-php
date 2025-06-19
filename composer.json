@@ -1,0 +1,34 @@
+{
+  "name": "tinymeng/wework-finance-sdk",
+  "description": "wechat sina qq alipay twitter google line facebook oauth",
+  "type": "library",
+  "keywords": [
+    "php",
+    "wework",
+    "wework finance SDK"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "JiaMeng Ma",
+      "email": "666@majiameng.com",
+      "homepage": "https://www.majiameng.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "ext-openssl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.14",
+    "phpstan/phpstan": "^0.12",
+    "phpunit/phpunit": "^6.2",
+    "swoole/ide-helper": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "tinymeng\\WeWorkFinanceSDK\\": "src"
+    }
+  }
+}
