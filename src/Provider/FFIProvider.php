@@ -1,15 +1,16 @@
 <?php
 
 declare(strict_types=1);
-namespace MoChat\WeWorkFinanceSDK\Provider;
+namespace tinymeng\WeWorkFinanceSDK\Provider;
 
 use FFI;
-use MoChat\WeWorkFinanceSDK\Contract\ProviderInterface;
-use MoChat\WeWorkFinanceSDK\Exception\FinanceSDKException;
-use MoChat\WeWorkFinanceSDK\Exception\InvalidArgumentException;
+use tinymeng\WeWorkFinanceSDK\Contract\ProviderInterface;
+use tinymeng\WeWorkFinanceSDK\Exception\FinanceSDKException;
+use tinymeng\WeWorkFinanceSDK\Exception\InvalidArgumentException;
 
 /**
  * FFIProvider
+ * @author: TinyMeng <666@majiameng.com>
  */
 class FFIProvider extends AbstractProvider
 {

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 /**
  * ProviderInterface
+ * @author: TinyMeng <666@majiameng.com>
  */
 namespace tinymeng\WeWorkFinanceSDK\Contract;
 

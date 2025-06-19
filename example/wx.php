@@ -25,6 +25,7 @@ try {
 
     foreach ($list as $key=>$item){
         if($wxFinanceSDK->isMedia($item['msgtype'])){
+            // 下载媒体资源
             $list[$key]['media_path'] = $wxFinanceSDK->getDownloadMediaData($item[$item['msgtype']],$item['msgtype']);
         }
     }

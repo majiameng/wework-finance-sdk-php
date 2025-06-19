@@ -6,6 +6,7 @@ use tinymeng\WeWorkFinanceSDK\Provider\PHPExtProvider;
 
 /**
  * Class WxFinanceSDK.
+ * @author: JiaMeng <666@majiameng.com>
  * @method array getConfig()  获取微信配置
  * @method string getChatData(int $seq, int $limit)  获取会话记录数据(加密)
  * @method string decryptData(string $randomKey, string $encryptStr)  解密数据

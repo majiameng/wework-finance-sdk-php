@@ -1,15 +1,16 @@
 <?php
 
 declare(strict_types=1);
-/**
- * AbstractProvider
- */
 namespace tinymeng\WeWorkFinanceSDK\Provider;
 
 use tinymeng\WeWorkFinanceSDK\Contract\ProviderInterface;
 use tinymeng\WeWorkFinanceSDK\Exception\FinanceSDKException;
 use tinymeng\WeWorkFinanceSDK\Exception\InvalidArgumentException;
 
+/**
+ * AbstractProvider
+ * @author: TinyMeng <666@majiameng.com>
+ */
 abstract class AbstractProvider implements ProviderInterface
 {
     /**
