@@ -1,6 +1,6 @@
 {
   "name": "tinymeng/wework-finance-sdk",
-  "description": "wechat sina qq alipay twitter google line facebook oauth",
+  "description": "企业微信会话存档php SDK",
   "type": "library",
   "keywords": [
     "php",
