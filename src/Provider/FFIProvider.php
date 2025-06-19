@@ -107,13 +107,11 @@ class FFIProvider extends AbstractProvider
      * {@inheritdoc}
      * @throws FinanceSDKException
      */
-    public function getMediaData(string $sdkFileId, string $ext): \SplFileInfo
+    public function getMediaData(string $sdkFileId, string $path): \SplFileInfo
     {
-        $path = sys_get_temp_dir() . '/' . md5($sdkFileId);
-        $ext && $path .= '.' . $ext;
         try {
             $this->downloadMediaData($sdkFileId, $path);
-        } catch (\WxworkFinanceSdkExcption $e) {
+        } catch (\Exception $e) {
             throw new FinanceSDKException('获取文件失败' . $e->getMessage(), $e->getCode());
         }
         return new \SplFileInfo($path);

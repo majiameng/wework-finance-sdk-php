@@ -13,6 +13,7 @@
 $corpConfig = [
     'corpid'       => 'xxxx',
     'secret'       => 'xxxx',
+    'path'         => '/tmp',//文件存储路径
     'private_keys' => [
         '密钥版本号' => '私钥',
     ],
