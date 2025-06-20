@@ -1,6 +1,8 @@
 <?php
 
 use tinymeng\WeWorkFinanceSDK\Exception\FinanceSDKException;
+use tinymeng\WeWorkFinanceSDK\Provider\FFIProvider;
+use tinymeng\WeWorkFinanceSDK\Provider\PHPExtProvider;
 use tinymeng\WeWorkFinanceSDK\WxFinanceSDK;
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -15,11 +17,24 @@ $corpConfig = [
     ],
 ];
 
+## 包配置
+$srcConfig = [
+    'default'   => 'php-ffi',
+    'providers' => [
+        'php-ext' => [
+            'driver' => PHPExtProvider::class,
+        ],
+        'php-ffi' => [
+            'driver' => FFIProvider::class,
+        ],
+    ],
+];
+
 $seq = $_GET['seq']??1;
 $limit = $_GET['limit']??10;
 
 try {
-    $wxFinanceSDK = WxFinanceSDK::init($corpConfig);
+    $wxFinanceSDK = WxFinanceSDK::init($corpConfig,$srcConfig);
     // 获取会话记录数据(解密)
     $list = $wxFinanceSDK->getDecryptChatData($seq,$limit);
 
