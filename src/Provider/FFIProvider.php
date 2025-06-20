@@ -184,7 +184,11 @@ class FFIProvider extends AbstractProvider
         isset($this->config['timeout']) || $this->config['timeout'] = '';
 
         // C包路径
-        $includePath   = dirname(__DIR__, 2) . '/include/';
+        if(empty($this->config['includePath'])){
+            $includePath   = dirname(__DIR__, 2) . '/include/';
+        }else{
+            $includePath   = $this->config['includePath'];
+        }
         $this->cHeader = $includePath . $this->cHeader;
         $this->cLib    = $includePath . $this->cLib;
 

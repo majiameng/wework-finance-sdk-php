@@ -2,6 +2,7 @@
 namespace tinymeng\WeWorkFinanceSDK;
 use tinymeng\WeWorkFinanceSDK\Contract\ProviderInterface;
 use tinymeng\WeWorkFinanceSDK\Exception\InvalidArgumentException;
+use tinymeng\WeWorkFinanceSDK\Provider\FFIProvider;
 use tinymeng\WeWorkFinanceSDK\Provider\PHPExtProvider;
 
 /**
@@ -32,6 +33,9 @@ class WxFinanceSDK
             'providers' => [
                 'php-ext' => [
                     'driver' => PHPExtProvider::class,
+                ],
+                'php-ffi' => [
+                    'driver' => FFIProvider::class,
                 ],
             ],
         ];
