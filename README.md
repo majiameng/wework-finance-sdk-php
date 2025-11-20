@@ -12,7 +12,7 @@
 
 ## 使用要求
 * 需要PHP扩展 ext-wxwork_finance_sdk 或者 ext-ffi，二选一
-* 1. ext-wxwork_finance_sdk 安装详见: https://github.com/pangdahua/php7-wxwork-finance-sdk
+* 1. ext-wxwork_finance_sdk 安装详见: [https://github.com/pangdahua/php7-wxwork-finance-sdk](https://github.com/majiameng/wework-finance-sdk-php/wiki/installed-extension)
 * 2. ext-ffi PHP编译安装时 `—with-ffi`
 
 
