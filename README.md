@@ -22,6 +22,12 @@
 * [安装PHP扩展教程 wxwork_finance_sdk、ffi](https://github.com/majiameng/wework-finance-sdk-php/wiki/installed-extension)
 * [实例文件](https://github.com/majiameng/wework-finance-sdk-php/blob/master/example/wx.php)
 
+## 安装
+```
+composer require tinymeng/wework-finance-sdk
+```
+
+
 **！！请先熟悉 企业微信 说明文档！！请具有基本的 debug 能力！！**
 
 欢迎 Star，欢迎 PR！
