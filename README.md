@@ -28,6 +28,12 @@ composer require tinymeng/wework-finance-sdk
 ```
 
 
+### 相关开源
+- [wework-chat-history](https://github.com/majiameng/wework-chat-history)	(php版，含数据入库，图形化查看聊天记录)
+- [wework-msgaudit](https://github.com/majiameng/wework-msgaudit)	(Java版，含数据入库，无图形化)
+
+
+
 **！！请先熟悉 企业微信 说明文档！！请具有基本的 debug 能力！！**
 
 欢迎 Star，欢迎 PR！
